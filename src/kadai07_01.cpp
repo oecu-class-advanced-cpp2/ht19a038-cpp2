@@ -38,12 +38,11 @@ int nth_prime(unsigned int a, unsigned int d, unsigned int n) {
             count++;
         }
         if (count == n) {
-            std::cout << num << std::endl;
             break;
         }
         num += d;
     }
-    return 0;
+    return num;
 };
 
 int main() {
