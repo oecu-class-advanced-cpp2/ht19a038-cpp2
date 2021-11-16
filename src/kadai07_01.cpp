@@ -1,5 +1,6 @@
 // kadai07_01.cpp
 #include <iostream>
+#include <math.h>
 #define CPP2_PRIME_UPPER_LIMIT 1000000 //探索する値の上限値。
 
 /* --------------------------------------------------------------- */
@@ -16,7 +17,7 @@ int sosu_judge(unsigned int s) {
         return false;
     }
 
-    for (int i = 2; i <= s / 2; i++) {
+    for (int i = 2; i <= sqrt(s); i++) {
         if (s % i == 0) {
             return false;
         }
