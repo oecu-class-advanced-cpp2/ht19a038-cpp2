@@ -11,6 +11,11 @@
 */
 /* -------------------------------------------------------------- */
 int sosu_judge(unsigned int s) {
+
+    if (s == 1) {
+        return false;
+    }
+
     for (int i = 2; i <= s / 2; i++) {
         if (s % i == 0) {
             return false;
