@@ -10,8 +10,13 @@ namespace cpp2 {
     */
     /* --------------------------------------------------------------------- */
     class mcxi {
-
+    private:
+        int a, b;
+    public:
+        mcxi(const char c[]) {}
+        std::string to_string() { return "a"; }
     };
+    mcxi operator + (mcxi a, mcxi b) { return "a"; }
 } // namespace cpp2
 
 int main() {
